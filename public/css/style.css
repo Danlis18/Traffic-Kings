@@ -1,0 +1,262 @@
+/* 🌐 Основні стилі */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #1a1a2e;
+  color: white;
+  font-family: "Alumni Sans SC", sans-serif;
+  letter-spacing: 0.75px;
+}
+
+/* 📌 Хедер */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1a1a2e;
+  z-index: 1000;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 33px;
+  text-align: left;
+  margin: 0 25px;
+}
+
+.stely-text-header,
+.custum-text {
+  text-align: left;
+  margin: 0 25px;
+}
+
+.stely-text-header {
+  color: #71cf12;
+}
+
+/* 🎥 Відео */
+.video-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 200px;
+  }
+
+  .btn-custom {
+    min-width: 250px;
+  }
+}
+
+/* 🔘 Кнопки */
+.btn-custom {
+  transition: all 0.3s ease-in-out;
+  width: 87%;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #000000;
+}
+
+.btn-success,
+.btn-outline-success:hover {
+  background-color: #71cf12;
+  color: white;
+  border-color: #71cf12;
+}
+
+.btn-outline-success {
+  border-color: #71cf12;
+  color: #71cf12;
+}
+
+/* 🟩 Кнопка реєстрації */
+.register-btn {
+  background-color: #71cf12;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.register-btn:hover {
+  background-color: #71cf12;
+}
+
+/* 🎨 Тексти */
+.text-color-yellow {
+  color: #fece00;
+}
+
+.text-color-green {
+  color: #71cf12;
+}
+
+.fs-7 {
+  font-size: 45px;
+}
+
+/* 📊 Події / матчі */
+.event-group {
+  background: #131321;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.event-group ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-group li {
+  margin-bottom: 8px;
+}
+
+/* 🖼️ Слайдер */
+.slider-section {
+  background-color: transparent;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.slider-btn,
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 5px #000;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btn {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+  padding: 10px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #71cf12;
+  color: #000;
+}
+
+/* ⭕ Пагінація */
+.swiper .swiper-pagination {
+  bottom: -7px;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 6px !important;
+  background: white;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #71cf12;
+  opacity: 1;
+}
+
+/* 📍 Плаваюча кнопка */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #71cf12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 1050;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* 💬 Модальне вікно */
+.modal-content {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+/* 💸 Блок із грошима */
+.money-block {
+  background-color: #1f1f30;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 0 20px #71cf12;
+  margin-top: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.money-block:hover {
+  transform: scale(1.03);
+}
+
+/* 🏷️ Промокод */
+.promo {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #71cf12;
+}
+
+/* 🔗 Footer */
+footer a {
+  text-decoration: none;
+}
+
+footer .socials a {
+  color: lightblue;
+  margin: 0 10px;
+}
+
+/* 📩 Сапорт */
+.support-custum {
+  color: white;
+  background-color: #1f1f30;
+  margin: 25px;
+}
+
+/* 📏 Інші розміри */
+.size-arrow-down-short {
+  font-size: 70px;
+}
